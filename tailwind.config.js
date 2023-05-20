@@ -5,11 +5,7 @@ export default {
     screens: {
       "breakpoint": "850px"
     },
-    extend: {
-      colors: {
-        "menu-glass": "#00000000" 
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
