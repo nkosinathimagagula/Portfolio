@@ -1,9 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
+
+import { NavBar } from "./components/NavBar";
+
+
 const App = () => {
 
   return (
-    <div>
-
-    </div>
+    <BrowserRouter>
+      <div className="relative">
+        <NavBar />
+      </div>
+    </BrowserRouter>
   )
 }
 
