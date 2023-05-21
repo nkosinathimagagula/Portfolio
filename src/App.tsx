@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
 import { NavBar } from "./components/NavBar";
+import { Landing } from "./components/Landing";
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <BrowserRouter>
       <div className="relative">
         <NavBar />
+        <Landing />
       </div>
     </BrowserRouter>
   )
