@@ -11,7 +11,8 @@ export default {
         "edge-hex": "url('src/assets/backgrounds/bg-edge-hex.jpg')",
         "edge-rounds": "url('src/assets/backgrounds/bg-edge-rounds.jpg')",
         "edge-sq-blocks": "url('src/assets/backgrounds/bg-edge-sq-blocks.jpg')",
-        "rect": "url('src/assets/backgrounds/bg-rect.jpg')"
+        "rect": "url('src/assets/backgrounds/bg-rect.jpg')",
+        "about-gradient": "url('src/assets/backgrounds/about-gradient.png')"
       }
     },
   },
