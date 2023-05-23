@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { navBarTabs } from "../constants/navbar";
+import { logo, menu, close } from "../assets";
 
 
 export const NavBar = () => {
@@ -9,7 +10,7 @@ export const NavBar = () => {
     const [toogle, setToogle] = useState<boolean>(false);
 
     return(
-        <nav className="w-full bg-black fixed flex items-center breakpoint:px-10 px-5 py-5 top-0">
+        <nav className="w-full bg-black fixed flex items-center breakpoint:px-10 px-5 py-5 top-0 z-20">
             <div className="w-full flex justify-between ">
                 <Link
                     to={"/"}
@@ -19,7 +20,7 @@ export const NavBar = () => {
                     }}
                     className="flex items-center"
                 >
-                    <img src="src/assets/logo.png" alt="logo" className="w-15 h-10"/>
+                    <img src={logo} alt="logo" className="w-15 h-10"/>
                     &nbsp;
                     <p className="text-white text-[18px] flex font-bold cursor-pointer">
                         Walter &nbsp;
@@ -49,7 +50,7 @@ export const NavBar = () => {
 
                 <div className="breakpoint:hidden flex py-2">
                     <img 
-                        src={toogle ? 'src/assets/icons/close.png' : 'src/assets/icons/menu.png'} 
+                        src={toogle ? close : menu} 
                         alt="menu" 
                         className="w-6 h-6 cursor-pointer"
                         onClick={() => setToogle(!toogle)}
