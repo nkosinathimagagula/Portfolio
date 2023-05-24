@@ -29,13 +29,14 @@ const AboutSection = () => {
             <motion.div
                 variants={textVariant(0.5)}
             >
+                {/* welcome */}
                 <p className="tbp:text-[20px] text-[18px] text-black font-medium tracking-widest tbp:py-0 pt-16">INTRODUCTION</p>
                 <h2 className="tbp:text-[60px] text-[40px] font-black mt-2">About Me.</h2>
             </motion.div>
 
             <motion.p
                 variants={fadeIn("left", "spring", 0.5, 2.5)}
-                className="tbp:text-[20px] text-[18px] mt-3 leading-[25px] text-[#404040]"
+                className="tbp:text-[20px] text-[18px] mt-3 leading-[30px] text-[#303030]"
             >
                 {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 Mollitia, quas. Possimus saepe quasi quisquam vitae iure tempora aut, 
