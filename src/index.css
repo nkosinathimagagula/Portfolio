@@ -10,4 +10,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  background: fixed;
+}
+
+.card-border {
+  background: -webkit-linear-gradient(-90.13deg, #b0b7c0 60.5%, #b5b7b6 99.9%);
+  /* box-shadow: ; */
 }
