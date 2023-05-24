@@ -1,4 +1,6 @@
-export const navBarTabs = [
+import { navBarTab } from "../types";
+
+export const navBarTabs: navBarTab[] = [
     {
         id: "about_me",
         title: "About Me"
