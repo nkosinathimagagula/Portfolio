@@ -36,15 +36,3 @@ export const fadeIn = (direction: string, type: string, delay: number, duration:
       },
     };
 };
-
-export const staggerContainer = (staggerChildren?: any, delayChildren?: any) => {
-    return {
-      hidden: {},
-      show: {
-        transition: {
-          staggerChildren: staggerChildren,
-          delayChildren: delayChildren || 0,
-        },
-      },
-    };
-};
