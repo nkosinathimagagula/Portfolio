@@ -1,4 +1,9 @@
+import ReactTyped from "react-typed";
+
 export const Landing = () => {
+    const names: string[] = ["Walter.", "Nkosinathi."];
+
+
     return (
         <section className="py-20 w-full h-screen mx-auto bg-edge-sq-blocks bg-cover bg-no-repeat bg-center">
             <div className="tbp:pl-40 tbp:py-25 pl-5 py-16 absolute flex flex-row">
@@ -11,7 +16,15 @@ export const Landing = () => {
                 <div>
                     <h1 className="text-black font-black tbp:text-[80px] text-[50px] ml-5">
                         Hello, <br />
-                        I'm <span className="text-yellow-600">Walter.</span>
+                        I'm <span className="text-yellow-600">
+                            <ReactTyped 
+                                strings={names}
+                                typeSpeed={80}
+                                backSpeed={50}
+                                backDelay={2000}
+                                loop
+                            />
+                        </span>
                     </h1>
 
                     <p className="mx-5 font-medium tbp:text-[20px] text-[18px]">
