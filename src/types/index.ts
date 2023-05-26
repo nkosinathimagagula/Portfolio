@@ -32,3 +32,18 @@ export type skill = {
     name:string;
     icon: string;
 }
+
+export type education = {
+    name: string;
+    location: string;
+    icon: string;
+    qualification: string;
+    graduation_year: string;
+    years: string;
+}
+
+export type formData = {
+    name: string;
+    email: string;
+    message: string;
+}
