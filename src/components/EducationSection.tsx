@@ -56,8 +56,8 @@ const EducationSection = () => {
                     lineColor="#b0b7c0"
                     layout="1-column-left"
                 >
-                    {educationList.map((education) => (
-                        <Card education={education } />
+                    {educationList.map((education, index) => (
+                        <Card key={index} education={education } />
                     ))}
                 </VerticalTimeline>
             </div>

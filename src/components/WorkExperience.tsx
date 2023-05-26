@@ -66,8 +66,8 @@ const WorkExperience = () => {
                         lineColor="#b0b7c0"
                         layout="1-column-left"
                     >
-                        {experiences.map((experience) => (
-                            <Card experience={experience} />
+                        {experiences.map((experience, index) => (
+                            <Card key={index} experience={experience} />
                         ))}
                     </VerticalTimeline>
                 </div>
