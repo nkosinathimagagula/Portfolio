@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Snowfall from "react-snowfall";
 
 import { NavBar } from "./components/NavBar";
@@ -14,7 +14,7 @@ import SkillSection from "./components/SkillSection";
 const App = () => {
 
   return (
-    <BrowserRouter basename="/Portfolio">
+    <HashRouter>
         <NavBar />
         <Landing />
 
@@ -55,7 +55,7 @@ const App = () => {
             style={{zIndex: -1}} 
           />
         </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
