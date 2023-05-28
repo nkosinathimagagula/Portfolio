@@ -8,6 +8,8 @@ declare module "reshake" {
             v?: number;
             r?: number;
             dur?: number;
+
+            className?: string;
         }
     >;
 }
