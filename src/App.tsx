@@ -14,7 +14,7 @@ import SkillSection from "./components/SkillSection";
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
         <NavBar />
         <Landing />
 
