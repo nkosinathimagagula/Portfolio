@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nkosinathiwalter.github.io/portfolio",
+  "homepage": "https://nkosinathiwalter.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base=/Portfolio/ && md dist\\assets\\src\\assets\\backgrounds && (copy src\\assets\\backgrounds\\ dist\\assets\\src\\assets\\backgrounds\\)",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
