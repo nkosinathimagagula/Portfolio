@@ -11,7 +11,7 @@ const Card = (props: {index: number, interest: interest}) => {
         <Tilt>
             <motion.div
                 variants={fadeIn("right", "spring", 0.5*props.index, 2.5)}
-                className="mt-5 tbp:w-[250px] w-full h-72 card-border rounded-[20px]"
+                className="mt-5 w-[250px] h-72 card-border rounded-[20px]"
             >
                 
                     <div className="py-16">
@@ -30,6 +30,7 @@ const AboutSection = () => {
         <>
             <motion.div
                 variants={textVariant(0.1)}
+                className="overflow-hidden"
             >
                 <p className="tbp:text-[20px] text-[18px] text-black font-medium tracking-widest tbp:py-0 pt-16">WELCOME</p>
                 <motion.h2 
@@ -62,7 +63,7 @@ const AboutSection = () => {
                 <p className="tbp:text-[20px] text-[18px] py-5 mt-2 text-black font-medium tracking-widest">INTERESTS</p>
             </motion.div>
 
-            <div className="flex flex-wrap gap-10 justify-center">
+            <div className="py-5 flex flex-wrap gap-10 justify-center">
                 {interests.map((interest, index) => (
                     <Card key={interest.name} index={index} interest={interest}/>
                 ))}

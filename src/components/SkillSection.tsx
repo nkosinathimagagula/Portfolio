@@ -11,8 +11,9 @@ const Box = (props: {index: number, skill: skill}) => {
     return (
         <motion.div
             variants={fadeIn("right", "spring", 0.5*props.index, 2)}
+            className="overflow-hidden"
         >
-            <Shake>
+            <Shake className="p-5">
                 <Tilt className="w-20 h-20 card-border flex rounded-2xl">
                     <div className="w-full h-full flex-col py-4 px-auto justify-center">
                         <img src={props.skill.icon} alt={props.skill.name} className="w-10 h-10 object-contain m-auto" />

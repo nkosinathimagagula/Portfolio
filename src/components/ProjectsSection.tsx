@@ -10,44 +10,45 @@ import { github } from "../assets";
 
 const Card = (props: {index: number, project: project}) => {
     return (
-        <motion.div
-            variants={fadeIn("right", "spring", props.index*0.1, 1)}
+        <Tilt
+            className="w-[350px] rounded-2xl p-5 card-border"
         >
-            <Tilt
-                className="tbp:w-[350px] w-full rounded-2xl p-5 card-border"
+            <motion.div
+                variants={fadeIn("right", "spring", props.index*0.1, 1)}
             >
-                <div className="relative w-full h-[200px]">
-                    <img 
-                        src={props.project.image} 
-                        alt={props.project.name} 
-                        className="w-full h-full object-cover rounded-2xl" 
-                    />
-                </div>
-
-                <div className="mt-5">
-                    <h3 className="text-black font-bold text-[20px]">{props.project.name}</h3>
-                    <p className="mt-2 text-[#303030] text-[16px]">{props.project.description}</p>
-                </div>
-
-                <div className="mt-5">
-                    <div
-                        onClick={() => window.open(props.project.source_code_link, "_blank")}
-                        className="cursor-pointer flex items-center gap-1"
-                    >
-                        <img src={github} alt="github" className="w-6 h-6 object-contain" />
-                        <p className="text-black text-[9px]">{props.project.source_code_link}</p>
+                
+                    <div className="relative w-full h-[200px]">
+                        <img 
+                            src={props.project.image} 
+                            alt={props.project.name} 
+                            className="w-full h-full object-cover rounded-2xl" 
+                        />
                     </div>
-                </div>
 
-                <div className="mt-2 flex flex-wrap gap-5">
-                    {props.project.languages.map((language) => (
-                        <p key={language.name} className={`text-[14px] text-${language.color}`}>
-                            #{language.name}
-                        </p>
-                    ))}
-                </div>
-            </Tilt>
-        </motion.div>
+                    <div className="mt-5">
+                        <h3 className="text-black font-bold text-[20px]">{props.project.name}</h3>
+                        <p className="mt-2 text-[#303030] text-[16px]">{props.project.description}</p>
+                    </div>
+
+                    <div className="mt-5">
+                        <div
+                            onClick={() => window.open(props.project.source_code_link, "_blank")}
+                            className="cursor-pointer flex items-center gap-1"
+                        >
+                            <img src={github} alt="github" className="w-6 h-6 object-contain" />
+                            <p className="text-black text-[9px]">{props.project.source_code_link}</p>
+                        </div>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-5">
+                        {props.project.languages.map((language) => (
+                            <p key={language.name} className={`text-[14px] text-${language.color}`}>
+                                #{language.name}
+                            </p>
+                        ))}
+                    </div>
+            </motion.div>
+        </Tilt>
     )
 }
 
@@ -57,6 +58,7 @@ const ProjectsSection = () => {
     <div className="tbp:-mb-20">
         <motion.div
             variants={textVariant(0.1)}
+            className="overflow-hidden"
         >
             <p
                 className="tbp:text-[20px] text-[18px] text-black font-medium tracking-widest tbp:py-0 pt-16"
@@ -85,7 +87,7 @@ const ProjectsSection = () => {
             </motion.p>
         </div>
 
-        <div className="flex flex-wrap mt-10 gap-10">
+        <div className="py-14 px-8 flex flex-wrap mt-10 gap-10">
             {projects.map((project, index) => (
                 <Card key={project.name} index={index} project={project} />
             ))}

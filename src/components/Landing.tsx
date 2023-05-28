@@ -7,7 +7,7 @@ export const Landing = () => {
     return (
         <section className="py-20 w-full h-screen mx-auto bg-edge-sq-blocks bg-cover bg-no-repeat bg-center">
             <div className="tbp:pl-40 tbp:py-25 pl-5 py-16 absolute flex flex-row">
-                <div className="">
+                <div className="pb-5 overflow-hidden">
                     <div 
                         className="w-2 h-[105%] bg-scroll bg-gradient-to-b from-yellow-600 via-20% via-white to-70% to-gray-400 rounded-full"
                     />
