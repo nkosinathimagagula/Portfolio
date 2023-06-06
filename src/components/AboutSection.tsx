@@ -63,7 +63,7 @@ const AboutSection = () => {
                 <p className="tbp:text-[20px] text-[18px] py-5 mt-2 text-black font-medium tracking-widest">INTERESTS</p>
             </motion.div>
 
-            <div className="py-5 flex flex-wrap gap-10 justify-center">
+            <div className="py-5 flex flex-wrap gap-10 justify-center overflow-hidden">
                 {interests.map((interest, index) => (
                     <Card key={interest.name} index={index} interest={interest}/>
                 ))}
