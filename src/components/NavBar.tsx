@@ -56,7 +56,7 @@ export const NavBar = () => {
                         onClick={() => setToogle(!toogle)}
                     />
 
-                    <div className={`${toogle ? 'flex' : 'hidden'} bg-black p-5 min-w-[100px] top-20 absolute right-0`}>
+                    <div className={toogle ? 'bg-black p-5 fixed min-w-[100px] top-20 right-0 flex' : 'hidden'}>
                         <ul className="list-none flex flex-col justify-end items-start gap-2">
                             {navBarTabs.map((tab) => (
                             <li
