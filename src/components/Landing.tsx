@@ -28,11 +28,11 @@ export const Landing = () => {
                     </h1>
 
                     <p className="mx-5 font-medium tbp:text-[20px] text-[18px]">
-                        A recent Computer Science graduate with great <br className="tbp:block hidden"/>
-                        interest in developing backend applications. <br className="tbp:block hidden"/>
-                        Building efficient and scalable systems that <br className="tbp:block hidden"/>
-                        can easily adapt to evolving needs is where <br className="tbp:block hidden"/>
-                        my true passion lies.
+                        A software developer with great interest in <br className="tbp:block hidden"/>
+                        developing backend applications. Building <br className="tbp:block hidden"/>
+                        efficient and scalable systems that can <br className="tbp:block hidden"/>
+                        easily adapt to evolving needs is where my <br className="tbp:block hidden"/>
+                        true passion lies.
                     </p>
                 </div>
             </div> 
