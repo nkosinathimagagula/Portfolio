@@ -10,7 +10,8 @@ export const experiences: experience[] = [
         points: [
             "I learned a new stack (React/TypeScript) that I used to develop a web application.",
             "I gained experience in using React with Typescript to create components that can be reusable and managing state across the application.",
-            "I gained experience with working with APIs as I integrated APIs into the application."
+            "I gained experience with working with APIs as I integrated APIs into the application.",
+            "Regularly performed code reviews to improve code quality and learn about the industry best practices."
         ]
     }
 ]

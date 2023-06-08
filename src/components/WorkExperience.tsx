@@ -33,7 +33,7 @@ const Card = (props: {experience: experience}) => {
                 <p className="font-semibold text-[16px] text-[#505050]">{props.experience.company_name}</p>
             </div>
 
-            <ul className="mt-5 list-disc ml-5 space-y-2">
+            <ul className="mt-5 list-disc list-inside ml-5 space-y-2">
                 {props.experience.points.map((point, index) => (
                     <li
                         key={index}
