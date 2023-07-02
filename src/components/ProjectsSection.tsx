@@ -21,7 +21,7 @@ const Card = (props: {index: number, project: project}) => {
                         <img 
                             src={props.project.image} 
                             alt={props.project.name} 
-                            className="w-full h-full object-cover rounded-2xl" 
+                            className="object-fill h-full w-full rounded-xl"
                         />
                     </div>
 
