@@ -21,6 +21,7 @@ import SQL from "./icons/sql.png";
 import uwc from "./icons/uwc.png";
 import frontend from "./icons/frontend.png";
 import cloud_computing from "./icons/cloud-computing.png";
+import IntroductionToCyberSecurity from "./icons/introductionto-to-cybersecurity.png";
 import pixelscript_api from "./projects/pixelscriptAPI.png";
 import pixelscript from "./projects/pixelscript.png";
 
@@ -28,6 +29,6 @@ import pixelscript from "./projects/pixelscript.png";
 export { 
     logo, close, menu, backend, aws, machine_learning, cinema_booking, github, 
     Java, Python, HTML, CSS, JavaScript, TypeScript, ReactJS, Flask, FastAPI, 
-    Tailwindcss, Git, SQL, uwc, frontend, cloud_computing, pixelscript_api, 
-    pixelscript 
+    Tailwindcss, Git, SQL, uwc, frontend, cloud_computing, IntroductionToCyberSecurity,
+    pixelscript_api, pixelscript 
 }
