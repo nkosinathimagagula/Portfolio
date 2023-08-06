@@ -47,3 +47,10 @@ export type formData = {
     email: string;
     message: string;
 }
+
+
+export type certification = {
+    name: string;
+    icon: string;
+    link: string;
+}
